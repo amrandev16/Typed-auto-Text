@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typed</title>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+        body{
+         
+          opacity: 1;
+            font-family: "Courgette", cursive;
+            font-weight: 400;
+            font-style: normal;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+           position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+          background-color: black;
+            /* background-color: slategray; */
+        }
+        body::after {
+          content: '';
+          background-image: url(imeges/img.jpg);
+          background-size: contain;
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          opacity: 0.3;
+}
+      h1{
+        font-size:3rem;
+        top: 4px;
+        color:rgb(0, 255, 242);
+   
+      }
+      .typed{
+        color: yellow;
+      }
+    </style>
+
+</head>
+<body>
+    <h1>
+        MD: AMRAN HOSSAIN
+    </h1>
+  
+    <div class="container">
+       <h1>
+        I am a <span class="typed"></span>
+       </h1>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- ******************** -->
+
+    <script>
+ const typed = new Typed(".typed",{
+    strings :["Youtuber","Programmar","Designer", "Freelancer","Pothograpper"],
+    typeSpeed : 150,
+    backSpeed : 150,
+    looped : true
+   
+ })
+    </script>
+</body>
+</html>
